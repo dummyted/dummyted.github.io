@@ -174,13 +174,15 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
-  display: none; }
+  display: none; 
+}
   .classy-navbar-toggler .navbarToggler {
-    display: inline-block;
+    /* display: inline-block; */
     cursor: pointer; }
     .classy-navbar-toggler .navbarToggler span {
       position: relative;
-      background-color: #707070;
+      /* float: right; */
+      /* background-color: #707070; */
       border-radius: 3px;
       display: block;
       height: 3px;
