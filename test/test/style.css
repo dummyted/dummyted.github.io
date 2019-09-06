@@ -101,7 +101,7 @@ ul {
 .test{
   margin:0 !important;
   padding :0px 0px !important;
-  width:100%;
+  width:100% !important;
 }
 .test2{
   margin:0 !important;
@@ -722,7 +722,7 @@ input:required {
       font-weight: 500;
       padding: 0 20px; }
       .classy-nav-container .classy-navbar .classynav ul li a:hover, .classy-nav-container .classy-navbar .classynav ul li a:focus {
-        color: #000000; }
+        color: #ff0000; }
       @media only screen and (min-width: 992px) and (max-width: 1199px) {
         .classy-nav-container .classy-navbar .classynav ul li a {
           font-size: 14px; } }
@@ -731,7 +731,7 @@ input:required {
           font-size: 14px;
           color: #111343; }
           .classy-nav-container .classy-navbar .classynav ul li a:hover, .classy-nav-container .classy-navbar .classynav ul li a:focus {
-            color: #000000; } }
+            color: #ff0000; } }
       @media only screen and (max-width: 767px) {
         .classy-nav-container .classy-navbar .classynav ul li a {
           font-size: 14px;
