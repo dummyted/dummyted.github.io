@@ -554,9 +554,11 @@ input:required {
     background-image: -ms-linear-gradient(120deg, #505add 0%, #000000 100%);
     z-index: -2; }
   .confer-btn:focus, .confer-btn:hover {
-    font-weight: 500;
-    background-color: #ffffff;
-    color: #111343 !important;
+    font-weight: 1900;
+    /* background-color: #ff0000; */
+    background-image: -webkit-linear-gradient(120deg, #da2828 0%, #000000 100%);
+    background-image: -ms-linear-gradient(120deg, #da2828 0%, #000000 100%);
+    color: #000000 !important;
     -webkit-box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
     box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15); }
     .confer-btn:focus i, .confer-btn:hover i {
@@ -781,7 +783,9 @@ input:required {
   -webkit-transition-duration: 500ms;
   -o-transition-duration: 500ms;
   transition-duration: 500ms;
-  background-color: rgba(0, 0, 0, 0.8); }
+  /* background-color: rgba(255, 255, 255, 0.8);  */
+}
+
   .header-area.sticky {
     background-color: #000000;
     -webkit-box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
@@ -1178,7 +1182,9 @@ input:required {
 .about-us-countdown-area {
   position: relative;
   z-index: 1;
-  background-color: #151853; }
+  /* background-color: #151853;  */
+  background-color: #851d1d; 
+}
   .about-us-countdown-area .about-content-text h6 {
     font-size: 14px;
     font-weight: 500;
