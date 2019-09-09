@@ -536,9 +536,11 @@ input:required {
   -webkit-transition-duration: 500ms;
   -o-transition-duration: 500ms;
   transition-duration: 500ms;
-  overflow: hidden; }
+  overflow: hidden; 
+}
   .confer-btn i {
-    margin-left: 5px; }
+    margin-left: 5px; 
+  }
   .confer-btn::before {
     -webkit-transition-duration: 800ms;
     -o-transition-duration: 800ms;
@@ -552,7 +554,8 @@ input:required {
     background: #000000;
     background-image: -webkit-linear-gradient(120deg, #505add 0%, #000000 100%);
     background-image: -ms-linear-gradient(120deg, #505add 0%, #000000 100%);
-    z-index: -2; }
+    z-index: -2; 
+  }
   .confer-btn:focus, .confer-btn:hover {
     font-weight: 1900;
     /* background-color: #ff0000; */
@@ -560,11 +563,65 @@ input:required {
     background-image: -ms-linear-gradient(120deg, #da2828 0%, #000000 100%);
     color: #000000 !important;
     -webkit-box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
-    box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15); }
-    .confer-btn:focus i, .confer-btn:hover i {
+    box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15); 
+  }
+  .confer-btn:focus i, .confer-btn:hover i {
+    -webkit-animation: buttonIcon 1s ease-in infinite;
+    animation: buttonIcon 1s ease-in infinite; }
+  .confer-btn:focus::before, .confer-btn:hover::before {
+    left: 110%; }
+  /* Here Modified Button */
+  .confer-btn1 {
+    position: relative;
+    z-index: 1;
+    height: 46px;
+    line-height: 46px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    display: inline-block;
+    padding: 0 25px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    border-radius: 23px;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+    overflow: hidden; 
+  }
+    .confer-btn1 i {
+      margin-left: 5px; 
+    }
+    .confer-btn1::before {
+      -webkit-transition-duration: 800ms;
+      -o-transition-duration: 800ms;
+      transition-duration: 800ms;
+      position: absolute;
+      width: 120%;
+      height: 120%;
+      top: -10%;
+      left: -10%;
+      content: '';
+      background: #000000;
+      background-image: -webkit-linear-gradient(120deg, #505add 0%, #000000 100%);
+      background-image: -ms-linear-gradient(120deg, #505add 0%, #000000 100%);
+      z-index: -2; 
+    }
+  .confer-btn1:focus, .confer-btn1:hover {
+    font-weight: 1900;
+    /* background-color: #ff0000; */
+    background-image: -webkit-linear-gradient(120deg, #000000 0%, #000000 100%);
+    background-image: -ms-linear-gradient(120deg, #000000 0%, #000000 100%);
+    color: #ffffff !important;
+    -webkit-box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
+    box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15); 
+  }
+    .confer-btn1:focus i, .confer-btn1:hover i {
       -webkit-animation: buttonIcon 1s ease-in infinite;
       animation: buttonIcon 1s ease-in infinite; }
-    .confer-btn:focus::before, .confer-btn:hover::before {
+    .confer-btn1:focus::before, .confer-btn1:hover::before {
       left: 110%; }
 
 @-webkit-keyframes buttonIcon {
