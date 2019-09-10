@@ -1,808 +1,500 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="utf-8">
 
-    <!-- Title -->
-    <title>TEDx - Sri Sairam Engineering College</title>
+	<title>reveal.js – The HTML Presentation Framework</title>
 
-    <!-- Favicon -->
-    <!-- <link rel="icon" href="./img/core-img/favicon.png"> -->
-    <link rel="icon" href="./img/logo/tedx.png" type="image/x-icon" style="size: 100%;">
-    <!-- <div><img src="./img/logo/tedx.png" alt=""></div> -->
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+	<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+	<meta name="author" content="Hakim El Hattab">
 
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+
+	<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
 </head>
 
 <body>
-    <!-- Preloader -->
-    <div id="preloader">
-        <div class="loader"></div>
-    </div>
-    <!-- /Preloader -->
 
-    <!-- Header Area Start -->
-    <header class="header-area">
-        <!-- <br> -->
-        <div class="classy-nav-container breakpoint-off">
-            <div class="container">
-                <!-- Classy Menu -->
-                <nav class="classy-navbar  justify-content-between " id="conferNav"
-                    style="width:100% !important; position: relative;">
-                    <!-- Logo -->
-                    <a class="nav-brand" href="./index.html">
-                        <img src="./img/logo/tedx logo.png" alt="not found !!"></a>
-                    <!-- <a class="nav-brand" href="#section-0"><img src="./img/logo/TEDxSriSairamEngineeringCollege6.png" alt=""></a> -->
-                    <!-- <a class="nav-brand" href="./index.html"><img src="./img/core-img/logo.png" alt=""></a> -->
-                    <!-- <div>
-                        <a class="nav-brand" href="./index.html"><img
-                                src="./img/logo/TEDxSriSairamEngineeringCollege6.png" alt=""></a>
-                    </div> -->
-                    <!-- <div class="header-logo">
-                        <a class="site-logo" href="#section-0"><img
-                                src="./img/logo/TEDxSriSairamEngineeringCollege6.png" alt="" class="img-responsive"></a>
-                    </div> -->
+	<div class="reveal">
 
-                    <!-- Navbar Toggler -->
-                    <div class="classy-navbar-toggler">
-                        <span class="navbarToggler"><span></span><span></span><span></span></span>
-                    </div>
-                    <!-- <br> -->
-                    <!-- Menu -->
-                    <div class="classy-menu">
-                        <!-- Menu Close Button -->
-                        <div class="classycloseIcon">
-                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
-                        </div>
-                        <!-- Nav Start -->
-                        <div class="classynav">
-                            <!-- Adding Section Movement part -->
-                            <!-- <br> -->
-                            <ul id="nav">
-                                <!-- <li class="nav-item active">
-                                    <a class="nav-link" style="padding-right: 30px"
-                                        href="#section-0"><strong>Home</strong><span
-                                            class="sr-only">(current)</span></a>
-                                </li> -->
-                                <!-- <li class="nav-item">
-                                    <a class="nav-link" style="padding-right: 30px" href="#section-2"><strong>About
-                                            Tedx</strong></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" style="padding-right: 30px"
-                                        href="#section-3"><strong>Speakers</strong></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" style="padding-right: 30px" href="#section-5"><strong>Our
-                                            Sponsors</strong></a>
-                                </li> -->
-                                <li>
-                                    <a href="#section-2">About
-                                        Tedx</a>
-                                </li>
-                                <li>
-                                    <a href="#section-3">Speakers</a>
-                                </li>
-                                <li>
-                                    <a href="#section-5">Sponsors</a>
-                                </li>
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+			<!-- <section>
+				<h1>Reveal.js</h1>
+				<h3>The HTML Presentation Framework</h3>
+				<p>
+					<small>Created by <a href="./TedX/index.html">Hakim El Hattab</a> and <a
+							href="https://github.com/hakimel/reveal.js/graphs/contributors">contributors</a></small>
+				</p>
+			</section>
 
-                                <!-- <li class="nav-item">
-                                    <a class="nav-link" style="padding-right: 15px"
-                                        href="#section-2"><strong>Tick-Tock</strong></a>
-                                </li> -->
-
-                                <!-- <li class="nav-item">
-                                    <a class="nav-link" style="padding-right: 30px" href="#section-4"><strong>Schedule
-                                            Plan</strong></a>
-                                </li> -->
-                                <!-- <li class="nav-item">
-                                    <a class="nav-link" style="padding-right: 30px" href="#section-6"><strong>Contact
-                                            Us</strong></a>
-                                </li> -->
-                                <!-- <li class="nav-item" style="padding-right: 30px">
-                                    <a class="btn btn-outline my-2 my-sm-0" href="#"><strong>REGISTER</strong></a>
-                                    <a href="#" class="btn confer-btn mt-3 mt-lg-0 ml-3 ml-lg-5">REGISTER <i
-                                            class="zmdi zmdi-long-arrow-right"></i></a>
-                                </li> -->
-                                <!-- Ending Section Movement part -->
-
-                                <!-- <li><a href="speakers.html">Speakears</a></li> -->
-                                <!-- <li><a href="blog.html">Blog</a></li> -->
-                                <!-- <li><a href="contact.html">Contact</a></li> -->
-                            </ul>
-
-                            <!-- Get Tickets Button -->
-                            <a href="#" class="btn confer-btn mt-3 mt-lg-0 ml-3 ml-lg-5">Get Tickets <i
-                                    class="zmdi zmdi-long-arrow-right"></i></a>
-                            <!-- <a href="#" class="btn confer-btn mt-3 mt-lg-0 ml-3 ml-lg-5">Get Tickets <i
-                                    class="zmdi zmdi-long-arrow-right"></i></a> -->
-                        </div>
-                        <!-- Nav End -->
-                    </div>
-                </nav>
-            </div>
-        </div>
-        <br>
-    </header>
-    <!-- Header Area End -->
-
-    <!-- Welcome Area Start -->
-    <section class="welcome-area" id="section-0">
-        <div class="welcome-slides owl-carousel">
-            <!-- Single Slide -->
-            <div class="single-welcome-slide bg-img bg-overlay jarallax"
-                style="background-image: url(img/bg-img/100.jpeg);">
-                <!-- <div class="single-welcome-slide bg-img bg-overlay jarallax"
-                style="background-image: url(img/bg-img/1.jpg);"> -->
-                <div class="container h-100">
-                    <div class="row h-100 align-items-center">
-                        <!-- Welcome Text -->
-                        <div class="col-12">
-                            <div class="welcome-text text-right">
-                                <!-- <h2 data-animation="fadeInUp" data-delay="300ms">TED <br>TALKS</h2> -->
-                                <!-- <h6 data-animation="fadeInUp" data-delay="500ms">Chennai, Tamil Nadu, India</h6> -->
-                                <!-- <div class="hero-btn-group" data-animation="fadeInUp" data-delay="700ms">
-                                    <a href="#" class="btn confer-btn">More Information <i
-                                            class="zmdi zmdi-long-arrow-right"></i></a>
-                                </div> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Single Slide -->
-            <div class="single-welcome-slide bg-img bg-overlay jarallax"
-                style="background-image: url(img/bg-img/102.jpeg);">
-                <div class="container h-100">
-                    <div class="row h-100 align-items-center">
-                        <!-- Welcome Text -->
-                        <div class="col-12">
-                            <div class="welcome-text-two text-center">
-                                <h5 data-animation="fadeInUp" data-delay="100ms">The event consistently</h5>
-                                <h2 data-animation="fadeInUp" data-delay="300ms">OSHA Compliance</h2>
-                                <!-- Event Meta -->
-                                <div class="event-meta" data-animation="fadeInUp" data-delay="500ms">
-                                    <a class="event-date" href="#"><i class="zmdi zmdi-account"></i> October 5,
-                                        2019</a>
-                                    <a class="event-author" href="#"><i class="zmdi zmdi-alarm-check"></i> Laura
-                                        Green</a>
-                                </div>
-                                <div class="hero-btn-group" data-animation="fadeInUp" data-delay="700ms">
-                                    <a href="#" class="btn confer-btn m-2">View more <i
-                                            class="zmdi zmdi-long-arrow-right"></i></a>
-                                    <a href="#" class="btn confer-btn m-2">Get Tickets <i
-                                            class="zmdi zmdi-long-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Scroll Icon -->
-        <!-- <div class="icon-scroll" id="scrollDown"></div> -->
-    </section>
-    <!-- Welcome Area End -->
-
-    <!-- About Us And Countdown Area Start -->
-    <section class="about-us-countdown-area section-padding-100-0" id="section-2">
-        <div class="container">
-            <div class="row align-items-center">
-                <!-- About Content -->
-                <div class="col-12 col-md-6">
-                    <div class="about-content-text mb-80">
-                        <h6 class="wow fadeInUp" data-wow-delay="300ms">About Conference</h6>
-                        <h3 class="wow fadeInUp" data-wow-delay="300ms">Welcome to the Project Management</h3>
-                        <p class="wow fadeInUp" data-wow-delay="300ms">The Project Management is a platform to learn
-                            expert techniques for building successful project teams, creating efficient plans and
-                            implementing effective tracking measures to ensure your projects come in on deadline and on
-                            budget. In one fast-paced, well-designed day, we’ll cover all the essential elements of
-                            project management.</p>
-                        <a href="#" class="btn confer-btn1 mt-50 wow fadeInUp" data-wow-delay="300ms">Interested <i
-                                class="zmdi zmdi-long-arrow-right"></i></a>
-                    </div>
-                </div>
-                <!-- About Thumb -->
-                <div class="col-12 col-md-6">
-                    <div class="about-thumb mb-80 wow fadeInUp" data-wow-delay="300ms">
-                        <img src="img/bg-img/2.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Counter Up Area -->
-        <div class="countdown-up-area">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-12 col-md-3">
-                        <!-- Countdown Text -->
-                        <div class="countdown-content-text mb-100 wow fadeInUp" data-wow-delay="300ms">
-                            <!-- <h6>Conference Date</h6> -->
-                            <h4>Count Every Second Until the Event</h4>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-9">
-                        <div class="countdown-timer mb-100 wow fadeInUp" data-wow-delay="300ms">
-                            <div id="clock"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- About Us And Countdown Area End -->
-
-    <!-- Our Speakings Area Start -->
-    <section class="our-speaker-area bg-img bg-gradient-overlay section-padding-100-60"
-        style="background-image: url(img/bg-img/3.jpg);" id="section-3">
-        <div class="container">
-            <div class="row">
-                <!-- Heading -->
-                <div class="col-12">
-                    <div class="section-heading text-center wow fadeInUp" data-wow-delay="300ms">
-                        <p>Our Team</p>
-                        <h4>Who’s doin wot?</h4>
-                    </div>
-                </div>
-            </div>
-            <!-- Row 1 -->
-            <div class="row">
-                <!-- Single Speaker Area -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
-                        <!-- Thumb -->
-                        <div class="speaker-single-thumb">
-                            <img src="img/bg-img/4.jpg" alt="">
-                        </div>
-                        <!-- Social Info -->
-                        <div class="social-info">
-                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
-                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
-                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
-                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
-                        </div>
-                        <!-- Info -->
-                        <div class="speaker-info">
-                            <h5>Adithya Giridharan</h5>
-                            <p>Curator</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single Speaker Area -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
-                        <!-- Thumb -->
-                        <div class="speaker-single-thumb">
-                            <img src="img/bg-img/roshan.jpg" alt="">
-                        </div>
-                        <!-- Social Info -->
-                        <div class="social-info">
-                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
-                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
-                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
-                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
-                        </div>
-                        <!-- Info -->
-                        <div class="speaker-info">
-                            <h5>Roshan Punda</h5>
-                            <p>Executive Director</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Speaker Area -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
-                        <!-- Thumb -->
-                        <div class="speaker-single-thumb">
-                            <img src="img/bg-img/6.jpg" alt="">
-                        </div>
-                        <!-- Social Info -->
-                        <div class="social-info">
-                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
-                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
-                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
-                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
-                        </div>
-                        <!-- Info -->
-                        <div class="speaker-info">
-                            <h5>Tamil Selvan Vasantha Kumar</h5>
-                            <p>Treasurer</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Row 2 -->
-                <!-- Single Speaker Area -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
-                        <!-- Thumb -->
-                        <div class="speaker-single-thumb">
-                            <img src="img/bg-img/7.jpg" alt="">
-                        </div>
-                        <!-- Social Info -->
-                        <div class="social-info">
-                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
-                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
-                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
-                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
-                        </div>
-                        <!-- Info -->
-                        <div class="speaker-info">
-                            <h5>Yashwant Siddaarth</h5>
-                            <p>Speaker Coordinator</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Speaker Area -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
-                        <!-- Thumb -->
-                        <div class="speaker-single-thumb">
-                            <img src="img/bg-img/8.jpg" alt="">
-                        </div>
-                        <!-- Social Info -->
-                        <div class="social-info">
-                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
-                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
-                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
-                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
-                        </div>
-                        <!-- Info -->
-                        <div class="speaker-info">
-                            <h5>Ajay Krishnan</h5>
-                            <p>Sponsor Coordinator</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Speaker Area -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
-                        <!-- Thumb -->
-                        <div class="speaker-single-thumb">
-                            <img src="img/bg-img/9.jpg" alt="">
-                        </div>
-                        <!-- Social Info -->
-                        <div class="social-info">
-                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
-                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
-                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
-                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
-                        </div>
-                        <!-- Info -->
-                        <div class="speaker-info">
-                            <h5>Prajith Raj S</h5>
-                            <p>*Tha PR Head</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Edit Starts Here  - Adding Pics -->
-                <!-- Row 3 -->
-                <!-- Single Speaker Area -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
-                        <!-- Thumb -->
-                        <div class="speaker-single-thumb">
-                            <img src="img/bg-img/9.jpg" alt="">
-                        </div>
-                        <!-- Social Info -->
-                        <div class="social-info">
-                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
-                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
-                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
-                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
-                        </div>
-                        <!-- Info -->
-                        <div class="speaker-info">
-                            <h5>Royal MOM Aishu</h5>
-                            <p>Creative Head</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Speaker Area -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
-                        <!-- Thumb -->
-                        <div class="speaker-single-thumb">
-                            <img src="img/bg-img/jabez.jpeg" alt="">
-                        </div>
-                        <!-- Social Info -->
-                        <div class="social-info">
-                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
-                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
-                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
-                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
-                        </div>
-                        <!-- Info -->
-                        <div class="speaker-info">
-                            <h5>Jabez Selvaraj</h5>
-                            <p>Grapick Designer</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Speaker Area -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
-                        <!-- Thumb -->
-                        <div class="speaker-single-thumb">
-                            <img src="img/bg-img/9.jpg" alt="">
-                        </div>
-                        <!-- Social Info -->
-                        <div class="social-info">
-                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
-                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
-                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
-                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
-                        </div>
-                        <!-- Info -->
-                        <div class="speaker-info">
-                            <h5>Cat Eyes Koothi Koomar</h5>
-                            <p>Student Coordinator</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Row 4 -->
-                <!-- Single Speaker Area -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
-                        <!-- Thumb -->
-                        <div class="speaker-single-thumb">
-                            <img src="img/bg-img/9.jpg" alt="">
-                        </div>
-                        <!-- Social Info -->
-                        <div class="social-info">
-                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
-                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
-                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
-                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
-                        </div>
-                        <!-- Info -->
-                        <div class="speaker-info">
-                            <h5>Martin Carm</h5>
-                            <p>Event Manager</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single Speaker Area -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
-                        <!-- Thumb -->
-                        <div class="speaker-single-thumb">
-                            <img src="img/bg-img/9.jpg" alt="">
-                        </div>
-                        <!-- Social Info -->
-                        <div class="social-info">
-                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
-                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
-                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
-                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
-                        </div>
-                        <!-- Info -->
-                        <div class="speaker-info">
-                            <h5>TVGayyyyy</h5>
-                            <p>Production and Video Head</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single Speaker Area -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-speaker-area bg-gradient-overlay-2 wow fadeInUp" data-wow-delay="300ms">
-                        <!-- Thumb -->
-                        <div class="speaker-single-thumb">
-                            <img src="img/bg-img/9.jpg" alt="">
-                        </div>
-                        <!-- Social Info -->
-                        <div class="social-info">
-                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
-                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
-                            <a href="#"><i class="zmdi zmdi-twitter"></i></a>
-                            <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
-                        </div>
-                        <!-- Info -->
-                        <div class="speaker-info">
-                            <h5>Sanath R</h5>
-                            <p>Website Manager</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="col-12">
-                    <div class="more-speaker-btn text-center mt-20 mb-40 wow fadeInUp" data-wow-delay="300ms">
-                        <a class="btn confer-btn-white" href="#">view all Speaker <i
-                                class="zmdi zmdi-long-arrow-right"></i></a>
-                    </div>
-                </div> -->
-            </div>
-        </div>
-    </section>
-    <!-- Our Speakings Area End -->
+			<section>
+				<h2>Hello There</h2>
+				<p>
+					reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will
+					show you examples of what it can do.
+				</p>
+			</section>
 
 
-    <!-- Our Sponsor And Client Area Start -->
-    <section class="our-sponsor-client-area section-padding-100" id="section-5">
-        <div class="container">
-            <div class="row">
-                <!-- Heading -->
-                <div class="col-12">
-                    <div class="section-heading-2 text-center wow fadeInUp" data-wow-delay="300ms">
-                        <p>Partners &amp; Sponsors</p>
-                        <h4>OFFICIAL SPONSOR</h4>
-                    </div>
-                </div>
-            </div>
+			<section>
+				<section>
+					<h2>Vertical Slides</h2>
+					<p>Slides can be nested inside of each other.</p>
+					<p>Use the <em>Space</em> key to navigate through all slides.</p>
+					<br>
+					<a href="#" class="navigate-down">
+						<img width="178" height="238"
+							data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+					</a>
+				</section>
+				<section>
+					<h2>Basement Level 1</h2>
+					<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.
+					</p>
+				</section>
+				<section>
+					<h2>Basement Level 2</h2>
+					<p>That's it, time to go back up.</p>
+					<br>
+					<a href="#/2">
+						<img width="178" height="238"
+							data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow"
+							style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
+					</a>
+				</section>
+			</section>
 
-            <div class="row">
-                <div class="col-12">
-                    <!-- Our Sponsor area -->
-                    <div class="our-sponsor-area d-flex flex-wrap">
-                        <!-- Single Sponsor -->
-                        <div class="single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                            <a href="#"><img src="img/core-img/p-1.png" alt=""></a>
-                        </div>
-                        <!-- Single Sponsor -->
-                        <div class="single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                            <a href="#"><img src="img/core-img/p-2.png" alt=""></a>
-                        </div>
-                        <!-- Single Sponsor -->
-                        <div class="single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                            <a href="#"><img src="img/core-img/p-3.png" alt=""></a>
-                        </div>
-                        <!-- Single Sponsor -->
-                        <div class="single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                            <a href="#"><img src="img/core-img/p-4.png" alt=""></a>
-                        </div>
-                        <!-- Single Sponsor -->
-                        <div class="single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                            <a href="#"><img src="img/core-img/p-5.png" alt=""></a>
-                        </div>
-                        <!-- Single Sponsor -->
-                        <div class="single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                            <a href="#"><img src="img/core-img/p-6.png" alt=""></a>
-                        </div>
-                        <!-- Single Sponsor -->
-                        <div class="single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                            <a href="#"><img src="img/core-img/p-7.png" alt=""></a>
-                        </div>
-                        <!-- Single Sponsor -->
-                        <div class="single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                            <a href="#"><img src="img/core-img/p-8.png" alt=""></a>
-                        </div>
-                    </div>
-                </div>
+			<section>
+				<h2>Slides</h2>
+				<p>
+					Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out
+					at <a href="https://slides.com" target="_blank">https://slides.com</a>.
+				</p>
+			</section>
 
-            </div>
-        </div>
-    </section>
-    <!-- Our Sponsor And Client Area End -->
+			<section>
+				<h2>Point of View</h2>
+				<p>
+					Press <strong>ESC</strong> to enter the slide overview.
+				</p>
+				<p>
+					Hold down the <strong>alt</strong> key (<strong>ctrl</strong> in Linux) and click on any element to
+					zoom towards it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Click again to zoom back
+					out.
+				</p>
+				<p>
+					(NOTE: Use ctrl + click in Linux.)
+				</p>
+			</section>
 
-    <!-- Contact Area Start -->
-    <section class="contact-our-area section-padding-100-0" id="section-6">
-        <div class="container">
-            <div class="row">
-                <!-- Heading -->
-                <div class="col-12">
-                    <div class="section-heading-2 text-center wow fadeInUp" data-wow-delay="300ms">
-                        <p>Have Question?</p>
-                        <h4>Contact us</h4>
-                    </div>
-                </div>
-            </div>
+			<section>
+				<h2>Touch Optimized</h2>
+				<p>
+					Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your
+					slides.
+				</p>
+			</section>
 
-            <div class="row justify-content-between">
-                <div class="col-12 col-sm-3">
-                    <div class="contact-information mb-100">
-                        <!-- Single Contact Info -->
-                        <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
-                            <p>Address:</p>
-                            <h6>184 Main Collins Street</h6>
-                        </div>
-                        <!-- Single Contact Info -->
-                        <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
-                            <p>Phone:</p>
-                            <h6>(226) 446 9371</h6>
-                        </div>
-                        <!-- Single Contact Info -->
-                        <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
-                            <p>Email:</p>
-                            <h6>confer@gmail.com</h6>
-                        </div>
-                        <!-- Single Contact Info -->
-                        <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
-                            <p>Website:</p>
-                            <h6>www.confer.com</h6>
-                        </div>
-                    </div>
-                </div>
+			<section data-markdown>
+				<script type="text/template">
+					## Markdown support
 
-                <div class="col-12 col-sm-8">
-                    <!-- Contact Form -->
-                    <div class="contact_from_area mb-100 clearfix wow fadeInUp" data-wow-delay="300ms">
-                        <div class="contact_form">
-                            <form action="mail.php" method="post" id="main_contact_form">
-                                <div class="contact_input_area">
-                                    <div id="success_fail_info"></div>
-                                    <div class="row">
-                                        <!-- Form Group -->
-                                        <div class="col-12 col-lg-6">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control mb-30" name="name" id="name"
-                                                    placeholder="Your Name">
-                                            </div>
-                                        </div>
-                                        <!-- Form Group -->
-                                        <div class="col-12 col-lg-6">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control mb-30" name="name" id="name2"
-                                                    placeholder="Last Name">
-                                            </div>
-                                        </div>
-                                        <!-- Form Group -->
-                                        <div class="col-12 col-lg-6">
-                                            <div class="form-group">
-                                                <input type="email" class="form-control mb-30" name="email" id="email"
-                                                    placeholder="E-mail">
-                                            </div>
-                                        </div>
-                                        <!-- Form Group -->
-                                        <div class="col-12 col-lg-6">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control mb-30" name="subject"
-                                                    id="subject" placeholder="Your Number">
-                                            </div>
-                                        </div>
-                                        <!-- Form Group -->
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <textarea name="message" class="form-control mb-30" id="message"
-                                                    cols="30" rows="6" placeholder="Your Message *"></textarea>
-                                            </div>
-                                        </div>
-                                        <!-- Button -->
-                                        <div class="col-12">
-                                            <button type="submit" class="btn confer-btn">Send Message <i
-                                                    class="zmdi zmdi-long-arrow-right"></i></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Contact Area End -->
+						Write content using inline or external Markdown.
+						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
 
-    <!-- Footer Area Start -->
-    <footer class="footer-area bg-img bg-overlay-2 section-padding-100-0">
-        <!-- Main Footer Area -->
-        <div class="main-footer-area">
-            <div class="container">
-                <div class="row">
-                    <!-- Single Footer Widget Area -->
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="single-footer-widget mb-60 wow fadeInUp" data-wow-delay="300ms">
-                            <!-- Footer Logo -->
-                            <a href="#" class="footer-logo"><img src="img/core-img/logo.png" alt=""></a>
-                            <p>To take a trivial example, which of us ever undertakes laborious physical exercise,
-                                except to obtain.</p>
+						```
+						<section data-markdown>
+						  ## Markdown support
 
-                            <!-- Social Info -->
-                            <div class="social-info">
-                                <a href="#"><i class="zmdi zmdi-facebook"></i></a>
-                                <a href="#"><i class="zmdi zmdi-instagram"></i></a>
-                                <a href="#"><i class="zmdi zmdi-twitter"></i></a>
-                                <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
-                            </div>
-                        </div>
-                    </div>
+						  Write content using inline or external Markdown.
+						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+						</section>
+						```
+					</script>
+			</section>
 
-                    <!-- Single Footer Widget Area -->
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="single-footer-widget mb-60 wow fadeInUp" data-wow-delay="300ms">
-                            <!-- Widget Title -->
-                            <h5 class="widget-title">Contact</h5>
+			<section>
+				<section id="fragments">
+					<h2>Fragments</h2>
+					<p>Hit the next arrow...</p>
+					<p class="fragment">... to step through ...</p>
+					<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span
+							class="fragment">slide.</span></p>
 
-                            <!-- Contact Area -->
-                            <div class="footer-contact-info">
-                                <p><i class="zmdi zmdi-map"></i> 184 Main Collins Street</p>
-                                <p><i class="zmdi zmdi-phone"></i> (226) 446 9371</p>
-                                <p><i class="zmdi zmdi-email"></i> confer@gmail.com</p>
-                                <p><i class="zmdi zmdi-globe"></i> www.confer.com</p>
-                            </div>
-                        </div>
-                    </div>
+					<aside class="notes">
+						This slide has fragments which are also stepped through in the notes window.
+					</aside>
+				</section>
+				<section>
+					<h2>Fragment Styles</h2>
+					<p>There's different types of fragments, like:</p>
+					<p class="fragment grow">grow</p>
+					<p class="fragment shrink">shrink</p>
+					<p class="fragment fade-out">fade-out</p>
+					<p>
+						<span style="display: inline-block;" class="fragment fade-right">fade-right, </span>
+						<span style="display: inline-block;" class="fragment fade-up">up, </span>
+						<span style="display: inline-block;" class="fragment fade-down">down, </span>
+						<span style="display: inline-block;" class="fragment fade-left">left</span>
+					</p>
+					<p class="fragment fade-in-then-out">fade-in-then-out</p>
+					<p class="fragment fade-in-then-semi-out">fade-in-then-semi-out</p>
+					<p>Highlight <span class="fragment highlight-red">red</span> <span
+							class="fragment highlight-blue">blue</span> <span
+							class="fragment highlight-green">green</span></p>
+				</section>
+			</section>
 
-                    <!-- Single Footer Widget Area -->
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="single-footer-widget mb-60 wow fadeInUp" data-wow-delay="300ms">
-                            <!-- Widget Title -->
-                            <h5 class="widget-title">Workshops</h5>
+			<section id="transitions">
+				<h2>Transition Styles</h2>
+				<p>
+					You can select from different transitions, like: <br>
+					<a href="?transition=none#/transitions">None</a> -
+					<a href="?transition=fade#/transitions">Fade</a> -
+					<a href="?transition=slide#/transitions">Slide</a> -
+					<a href="?transition=convex#/transitions">Convex</a> -
+					<a href="?transition=concave#/transitions">Concave</a> -
+					<a href="?transition=zoom#/transitions">Zoom</a>
+				</p>
+			</section>
 
-                            <!-- Footer Nav -->
-                            <ul class="footer-nav">
-                                <li><a href="#">OSHA Compliance</a></li>
-                                <li><a href="#">Microsoft Excel Basics</a></li>
-                                <li><a href="#">Forum Speaker Series</a></li>
-                                <li><a href="#">Tedx Moscow Conference</a></li>
-                            </ul>
-                        </div>
-                    </div>
+			<section id="themes">
+				<h2>Themes</h2>
+				<p>
+					reveal.js comes with a few themes built in: <br>
 
-                    <!-- Single Footer Widget Area -->
-                    <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="single-footer-widget mb-60 wow fadeInUp" data-wow-delay="300ms">
-                            <!-- Widget Title -->
-                            <h5 class="widget-title">Gallery</h5>
+					<a href="#"
+						onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black
+						(default)</a> -
+					<a href="#"
+						onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a>
+					-
+					<a href="#"
+						onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a>
+					-
+					<a href="#"
+						onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a>
+					-
+					<a href="#"
+						onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a>
+					-
+					<a href="#"
+						onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a>
+					<br>
+					<a href="#"
+						onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a>
+					-
+					<a href="#"
+						onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a>
+					-
+					<a href="#"
+						onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a>
+					-
+					<a href="#"
+						onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a>
+					-
+					<a href="#"
+						onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
+				</p>
+			</section>
 
-                            <!-- Footer Gallery -->
-                            <div class="footer-gallery">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <a href="img/bg-img/21.jpg" class="single-gallery-item"><img
-                                                src="img/bg-img/21.jpg" alt=""></a>
-                                    </div>
-                                    <div class="col-4">
-                                        <a href="img/bg-img/22.jpg" class="single-gallery-item"><img
-                                                src="img/bg-img/22.jpg" alt=""></a>
-                                    </div>
-                                    <div class="col-4">
-                                        <a href="img/bg-img/23.jpg" class="single-gallery-item"><img
-                                                src="img/bg-img/23.jpg" alt=""></a>
-                                    </div>
-                                    <div class="col-4">
-                                        <a href="img/bg-img/24.jpg" class="single-gallery-item"><img
-                                                src="img/bg-img/24.jpg" alt=""></a>
-                                    </div>
-                                    <div class="col-4">
-                                        <a href="img/bg-img/25.jpg" class="single-gallery-item"><img
-                                                src="img/bg-img/25.jpg" alt=""></a>
-                                    </div>
-                                    <div class="col-4">
-                                        <a href="img/bg-img/26.jpg" class="single-gallery-item"><img
-                                                src="img/bg-img/26.jpg" alt=""></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Footer Area End -->
+			<section>
+				<section data-background="#dddddd">
+					<h2>Slide Backgrounds</h2>
+					<p>
+						Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS
+						color formats are supported.
+					</p>
+					<a href="#" class="navigate-down">
+						<img width="178" height="238"
+							data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+					</a>
+				</section>
+				<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
+					<h2>Image Backgrounds</h2>
+					<pre><code class="hljs html">&lt;section data-background="image.png"&gt;</code></pre>
+				</section>
+				<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png"
+					data-background-repeat="repeat" data-background-size="100px">
+					<h2>Tiled Backgrounds</h2>
+					<pre><code class="hljs html" style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
+				</section>
+				<section
+					data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm"
+					data-background-color="#000000">
+					<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
+						<h2>Video Backgrounds</h2>
+						<pre><code class="hljs html" style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
+					</div>
+				</section>
+				<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
+					<h2>... and GIFs!</h2>
+				</section>
+			</section>
 
-    <!-- **** All JS Files ***** -->
-    <!-- jQuery 2.2.4 -->
-    <script src="js/jquery.min.js"></script>
-    <!-- Popper -->
-    <script src="js/popper.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- All Plugins -->
-    <script src="js/confer.bundle.js"></script>
-    <!-- Active -->
-    <script src="js/default-assets/active.js"></script>
-    <script type="text/javascript" src="js/flipclock.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/14.2.1/smooth-scroll.min.js"
-        integrity="sha256-MhIEydYjM8X/lfw31uxgXHB5BCo+bQX6BmFJYmzty7w=" crossorigin="anonymous"></script>
+			<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+				<h2>Background Transitions</h2>
+				<p>
+					Different background transitions are available via the backgroundTransition option. This one's
+					called "zoom".
+				</p>
+				<pre><code class="hljs javascript">Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
+			</section>
 
-    <!-- <script type="text/javascript">
-        $(function () {
-            var scroll = new SmoothScroll('a[href*="#section-"]');
-        });
-    </script> -->
+			<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+				<h2>Background Transitions</h2>
+				<p>
+					You can override background transitions per-slide.
+				</p>
+				<pre><code class="hljs html" style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
+			</section> -->
+
+			<section data-background-iframe="./TedX/index.html" data-background-interactive>
+				<!-- <div
+					style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+					<h2>Iframe Backgrounds</h2>
+					<p>Since reveal.js runs on the web, you can easily embed other web content. Try interacting with the
+						page in the background.</p>
+				</div> -->
+			</section>
+
+			<section>
+				<h2>Pretty Code</h2>
+				<pre><code class="hljs" data-trim data-line-numbers="4,8-11">
+import React, { useState } from 'react';
+
+function Example() {
+  const [count, setCount] = useState(0);
+
+  return (
+    &lt;div&gt;
+      &lt;p&gt;You clicked {count} times&lt;/p&gt;
+      &lt;button onClick={() =&gt; setCount(count + 1)}&gt;
+        Click me
+      &lt;/button&gt;
+    &lt;/div&gt;
+  );
+}
+					</code></pre>
+				<p>Code syntax highlighting courtesy of <a
+						href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
+			</section>
+
+			<section>
+				<h2>Marvelous List</h2>
+				<ul>
+					<li>No order here</li>
+					<li>Or here</li>
+					<li>Or here</li>
+					<li>Or here</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Fantastic Ordered List</h2>
+				<ol>
+					<li>One is smaller than...</li>
+					<li>Two is smaller than...</li>
+					<li>Three!</li>
+				</ol>
+			</section>
+
+			<section>
+				<h2>Tabular Tables</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Item</th>
+							<th>Value</th>
+							<th>Quantity</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Apples</td>
+							<td>$1</td>
+							<td>7</td>
+						</tr>
+						<tr>
+							<td>Lemonade</td>
+							<td>$2</td>
+							<td>18</td>
+						</tr>
+						<tr>
+							<td>Bread</td>
+							<td>$3</td>
+							<td>2</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section>
+				<h2>Clever Quotes</h2>
+				<p>
+					These guys come in two forms, inline: <q
+						cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">The
+						nice thing about standards is that there are so many to choose from</q> and block:
+				</p>
+				<blockquote
+					cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+					&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of
+					typewriters would
+					reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
+				</blockquote>
+			</section>
+
+			<section>
+				<h2>Intergalactic Interconnections</h2>
+				<p>
+					You can link between slides internally,
+					<a href="#/2/3">like this</a>.
+				</p>
+			</section>
+
+			<section>
+				<h2>Speaker View</h2>
+				<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes
+					a timer, preview of the upcoming slide as well as your speaker notes.</p>
+				<p>Press the <em>S</em> key to try it out.</p>
+
+				<aside class="notes">
+					Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you
+					open the speaker notes window (hit 's' on your keyboard).
+				</aside>
+			</section>
+
+			<section>
+				<h2>Export to PDF</h2>
+				<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>,
+					here's an example:</p>
+				<iframe data-src="https://www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355"
+					frameborder="0" marginwidth="0" marginheight="0" scrolling="no"
+					style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+			</section>
+
+			<section>
+				<h2>Global State</h2>
+				<p>
+					Set <code>data-state="something"</code> on a slide and <code>"something"</code>
+					will be added as a class to the document element when the slide is open. This lets you
+					apply broader style changes, like switching the page background.
+				</p>
+			</section>
+
+			<section data-state="customevent">
+				<h2>State Events</h2>
+				<p>
+					Additionally custom events can be triggered on a per slide basis by binding to the
+					<code>data-state</code> name.
+				</p>
+				<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
+Reveal.addEventListener( 'customevent', function() {
+	console.log( '"customevent" has fired' );
+} );
+					</code></pre>
+			</section>
+
+			<section>
+				<h2>Take a Moment</h2>
+				<p>
+					Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and
+					want to take distracting slides off the screen.
+				</p>
+			</section>
+
+			<section>
+				<h2>Much more</h2>
+				<ul>
+					<li>Right-to-left support</li>
+					<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
+					<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
+					<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
+					<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a>
+					</li>
+				</ul>
+			</section>
+
+			<section style="text-align: left;">
+				<h1>THE END</h1>
+				<p>
+					- <a href="https://slides.com">Try the online editor</a> <br>
+					- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
+				</p>
+			</section>
+
+		</div>
+
+	</div>
+
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			center: true,
+			hash: true,
+
+			transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+			// More info https://github.com/hakimel/reveal.js#dependencies
+			dependencies: [{
+					src: 'plugin/markdown/marked.js',
+					condition: function () {
+						return !!document.querySelector('[data-markdown]');
+					}
+				},
+				{
+					src: 'plugin/markdown/markdown.js',
+					condition: function () {
+						return !!document.querySelector('[data-markdown]');
+					}
+				},
+				{
+					src: 'plugin/highlight/highlight.js',
+					async: true
+				},
+				{
+					src: 'plugin/search/search.js',
+					async: true
+				},
+				{
+					src: 'plugin/zoom-js/zoom.js',
+					async: true
+				},
+				{
+					src: 'plugin/notes/notes.js',
+					async: true
+				}
+			]
+		});
+	</script>
+
 </body>
 
 </html>
