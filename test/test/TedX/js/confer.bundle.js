@@ -5110,23 +5110,24 @@ function (t, e) {
             var b, c = void 0 !== a._data(this.el, "events"),
                 d = new Date();
             // alert(d);
-            var t = ((Date.parse(this.finalDate) - Date.parse(new Date())) / 1000);
-            b = this.finalDate.getTime() - d.getTime(), b = Math.ceil(b / 1e3), b = !this.options.elapse && b < 0 ? 0 : Math.abs(b), this.totalSecsLeft !== b && c && (this.totalSecsLeft = b, this.elapsed = d >= this.finalDate, this.offset = {
-                seconds: Math.floor((t / 1000) % 60),
-                minutes: Math.floor((t / 1000 / 60) % 60),
-                hours: Math.floor((t / (1000 * 60 * 60)) % 24),
-                days: Math.floor(t / (1000 * 60 * 60 * 24)),
-                daysToWeek: Math.floor(this.totalSecsLeft / 60 / 60 / 24) % 7,
-                daysToMonth: Math.floor(this.totalSecsLeft / 60 / 60 / 24 % 30.4368),
-                weeks: Math.floor(this.totalSecsLeft / 60 / 60 / 24 / 7),
-                weeksToMonth: Math.floor(this.totalSecsLeft / 60 / 60 / 24 / 7) % 4,
-                months: Math.floor(t / (1000 * 60 * 60 * 24 * 30.4368)),
-                years: Math.abs(this.finalDate.getFullYear() - d.getFullYear()),
-                totalDays: Math.floor(t / (1000 * 60 * 60 * 24)),
-                totalHours: Math.floor((t / (1000 * 60 * 60)) % 24),
-                totalMinutes: Math.floor((t / 1000 / 60) % 60),
-                totalSeconds: Math.floor((t / 1000) % 60)
-            }, this.options.elapse || 0 !== this.totalSecsLeft ? this.dispatchEvent("update") : (this.stop(), this.dispatchEvent("finish")))
+            var t = ((Date.parse(this.finalDate) - Date.parse(new Date())));
+            b = this.finalDate.getTime() - d.getTime(), b = Math.ceil(b / 1e3), b = !this.options.elapse && b < 0 ? 0 : Math.abs(b), this.totalSecsLeft !== b && c && (this.totalSecsLeft = b, this.elapsed = d >= this.finalDate,
+                this.offset = {
+                    seconds: Math.floor((t / 1000) % 60),
+                    minutes: Math.floor((t / 1000 / 60) % 60),
+                    hours: Math.floor((t / (1000 * 60 * 60)) % 24),
+                    days: Math.floor(t / (1000 * 60 * 60 * 24)),
+                    daysToWeek: Math.floor(this.totalSecsLeft / 60 / 60 / 24) % 7,
+                    daysToMonth: Math.floor(this.totalSecsLeft / 60 / 60 / 24 % 30.4368),
+                    weeks: Math.floor(this.totalSecsLeft / 60 / 60 / 24 / 7),
+                    weeksToMonth: Math.floor(this.totalSecsLeft / 60 / 60 / 24 / 7) % 4,
+                    months: Math.floor(t / (1000 * 60 * 60 * 24 * 30.4368)),
+                    years: Math.abs(this.finalDate.getFullYear() - d.getFullYear()),
+                    totalDays: Math.floor(t / (1000 * 60 * 60 * 24)),
+                    totalHours: Math.floor((t / (1000 * 60 * 60)) % 24),
+                    totalMinutes: Math.floor((t / 1000 / 60) % 60),
+                    totalSeconds: Math.floor((t / 1000) % 60)
+                }, this.options.elapse || 0 !== this.totalSecsLeft ? this.dispatchEvent("update") : (this.stop(), this.dispatchEvent("finish")))
         },
         dispatchEvent: function (b) {
             var c = a.Event(b + ".countdown");

@@ -36,6 +36,7 @@
             closeIcon.on('click', function () {
                 classyMenu.removeClass('menu-on');
                 navToggler.removeClass('active');
+                // alert('here');
             });
 
             // add dropdown & megamenu class in parent li class
@@ -51,6 +52,7 @@
 
             // expands the dropdown menu on each click
             classy_nav.find('li .dd-trigger').on('click', function (e) {
+
                 e.preventDefault();
                 $(this).parent('li').children('ul').stop(true, true).slideToggle(defaultOpt.openCloseSpeed);
                 $(this).parent('li').toggleClass('active');
@@ -61,6 +63,7 @@
 
             // expands the megamenu on each click
             classy_nav.find('li .dd-trigger').on('click', function (e) {
+
                 e.preventDefault();
                 $(this).parent('li').children('.megamenu').slideToggle(defaultOpt.megaopenCloseSpeed);
             });
@@ -87,5 +90,5 @@
             }
         });
     };
-    
+
 }(jQuery));

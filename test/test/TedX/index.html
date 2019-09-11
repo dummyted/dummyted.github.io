@@ -82,14 +82,14 @@
                                             Sponsors</strong></a>
                                 </li> -->
                                 <li>
-                                    <a href="#section-2">About
+                                    <a href="#section-2" onclick="test();">About
                                         Tedx</a>
                                 </li>
                                 <li>
-                                    <a href="#section-3">Team</a>
+                                    <a href="#section-3" onclick="test();">Team</a>
                                 </li>
                                 <li>
-                                    <a href="#section-5">Sponsors</a>
+                                    <a href="#section-5" onclick="test();">Sponsors</a>
                                 </li>
 
                                 <!-- <li class="nav-item">
@@ -707,6 +707,13 @@
         $(function () {
             var scroll = new SmoothScroll('a[href*="#section-"]');
         });
+
+        function test() {
+            var classyMenu = $('.classy-menu');
+            var navToggler = $('.navbarToggler');
+            classyMenu.removeClass('menu-on');
+            navToggler.removeClass('active');
+        }
     </script>
 </body>
 
