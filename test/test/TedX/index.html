@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <!-- Title -->
     <title>TEDx - Sri Sairam Engineering College</title>
 
@@ -16,16 +16,61 @@
     <!-- <div><img src="./img/logo/tedx.png" alt=""></div> -->
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Paste this css to your style sheet file or under head tag */
+        /* This only works with JavaScript, 
+        if it's not present, don't show loader */
+        .no-js #loader {
+            display: none;
+        }
 
+        .js #loader {
+            display: block;
+            position: absolute;
+            left: 100px;
+            top: 0;
+        }
+
+        .se-pre-con {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background: url("./img/bg-img/source.gif") center center no-repeat #000000;
+            background-size: cover;
+            /* border-radius: 25px; */
+            /* background: url(http://smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.gif) center no-repeat #ffffff; */
+            /* background: url(https://media.giphy.com/media/YQitE4YNQNahy/giphy.gif) center no-repeat #fff; */
+            /* background: url(https://media.giphy.com/media/UqxVRm1IaaIGk/giphy.gif) center no-repeat #fff; */
+            /* background: url(  https://media.giphy.com/media/4lZaiAxj6fjwI/giphy.gif) center no-repeat #fff; */
+        }
+    </style>
 </head>
 
 <body>
     <!-- Preloader -->
-    <div id="preloader">
+    <!-- <div id="preloader">
         <div class="loader"></div>
-    </div>
+    </div> -->
     <!-- /Preloader -->
 
+    <script>
+        //paste this code under the head tag or in a separate js file.
+        // Wait for window load
+        $(window).load(function () {
+            // Animate loader off screen
+            var delayInMilliseconds = 1000; //1 second
+            setTimeout(function () {
+                //your code to be executed after 1 second
+                $(".se-pre-con").fadeOut("slow");
+            }, delayInMilliseconds);
+
+        });
+    </script>
+    <!-- Preloader starts here !! xD -->
+    <div class="se-pre-con"></div>
     <!-- Header Area Start -->
     <header class="header-area">
         <!-- <br> -->

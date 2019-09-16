@@ -388,8 +388,8 @@ input:required {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  -webkit-animation: loader linear 2s infinite;
-  animation: loader linear 2s infinite;
+  -webkit-animation: loader linear 1s infinite;
+  animation: loader linear 1s infinite;
   border-top: 2px solid #ff0000;
   border-left: 2px solid transparent;
   border-right: 2px solid transparent;
