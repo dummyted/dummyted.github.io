@@ -1403,14 +1403,14 @@ input:required {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
-      color: #ffffff; }
+      color: #ff0000; }
       .about-us-countdown-area .countdown-up-area .countdown-timer #clock div {
         font-size: 62px;
         font-weight: 600;
         padding: 20px 5px;
         width: 20%;
         margin: 0 15px;
-        border: 2px solid rgba(255, 255, 255, 0.15);
+        border: 2px solid rgba(255, 0, 0, 0.15);
         text-align: center;
         line-height: 1; }
         @media only screen and (min-width: 992px) and (max-width: 1199px) {
