@@ -225,7 +225,7 @@
     // :: 13.0 Countdown Active Code
     // ****************************
     if ($.fn.countdown) {
-        $("#clock").countdown("2019/10/12", function (event) {
+        $("#clock").countdown("2019/10/10", function (event) {
             // alert(event);
             // console.log(event);
 
