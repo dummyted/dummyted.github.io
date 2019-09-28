@@ -474,7 +474,7 @@
 }
 
 .breakpoint-on .classy-navbar .classy-menu {
-  background-color: rgb(0, 0, 0, 0.75);
+  background-color: rgb(0, 0, 0);
   position: fixed;
   top: 0;
   left: -340px;
