@@ -5111,13 +5111,14 @@ function (t, e) {
                 d = new Date();
             // alert(d);
             var t = ((Date.parse(this.finalDate) - Date.parse(new Date())));
+            // alert(t / 1000);
             b = this.finalDate.getTime() - d.getTime(), b = Math.ceil(b / 1e3), b = !this.options.elapse && b < 0 ? 0 : Math.abs(b), this.totalSecsLeft !== b && c && (this.totalSecsLeft = b, this.elapsed = d >= this.finalDate,
                 this.offset = {
                     seconds: Math.floor((t / 1000) % 60),
                     minutes: Math.floor((t / 1000 / 60) % 60),
                     hours: Math.floor((t / (1000 * 60 * 60)) % 24),
                     days: Math.floor(t / (1000 * 60 * 60 * 24)),
-                    daysToWeek: Math.floor(this.totalSecsLeft / 60 / 60 / 24) % 7,
+                    daysToWeek: Math.floor(t / 1000 / 60 / 60 / 24),
                     daysToMonth: Math.floor(this.totalSecsLeft / 60 / 60 / 24 % 30.4368),
                     weeks: Math.floor(this.totalSecsLeft / 60 / 60 / 24 / 7),
                     weeksToMonth: Math.floor(this.totalSecsLeft / 60 / 60 / 24 / 7) % 4,
