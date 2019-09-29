@@ -186,16 +186,16 @@
                 tNext: 'Next'
             }
         });
-        $('.single-gallery-item').magnificPopup({
-            type: 'image',
-            gallery: {
-                enabled: true,
-                preload: [0, 2],
-                navigateByImgClick: true,
-                tPrev: 'Previous',
-                tNext: 'Next'
-            }
-        });
+        // $('.single-gallery-item').magnificPopup({
+        //     type: 'image',
+        //     gallery: {
+        //         enabled: true,
+        //         preload: [0, 2],
+        //         navigateByImgClick: true,
+        //         tPrev: 'Previous',
+        //         tNext: 'Next'
+        //     }
+        // });
     }
 
     // **************************
