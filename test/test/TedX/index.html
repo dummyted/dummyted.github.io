@@ -25,6 +25,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
     <!-- Title -->
     <title>TEDx - Sri Sairam Engineering College</title>
 
@@ -34,6 +35,36 @@
     <!-- <div><img src="./img/logo/tedx.png" alt=""></div> -->
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
+
+         <style>
+            #confirm {
+               display: none;
+               background-color: #FFFFFF;
+               border: 1px solid #aaa;
+               position: fixed;
+               width: 250px;
+               left: 50%;
+               margin-left: -100px;
+               padding: 6px 8px 8px;
+               box-sizing: border-box;
+               text-align: center;
+               z-index: 9999999;
+            }
+            #confirm button {
+               background-color: #48E5DA;
+               display: inline-block;
+               border-radius: 5px;
+               border: 1px solid #aaa;
+               padding: 5px;
+               text-align: center;
+               width: 80px;
+               cursor: pointer;
+               z-index: 9999999;
+            }
+            #confirm .message {
+               text-align: left;
+            }
+         </style>
     <style>
         /* Paste this css to your style sheet file or under head tag */
         /* This only works with JavaScript, 
@@ -64,6 +95,17 @@
             /* background: url(https://media.giphy.com/media/UqxVRm1IaaIGk/giphy.gif) center no-repeat #fff; */
             /* background: url(  https://media.giphy.com/media/4lZaiAxj6fjwI/giphy.gif) center no-repeat #fff; */
         }
+    </style>
+    <style>
+            #dialog{
+                height:auto !important;
+                width:auto !important;
+                z-index: 999999999;
+                position:fixed ;
+                visibility: hidden;
+                background: url("./img/meme/regPause.jpg") center center no-repeat #000000;
+                background-size: cover;
+            }
     </style>
 </head>
 
@@ -189,11 +231,12 @@
                             </ul>
 
                             <!-- Get Tickets Button -->
-                            <a target="_blank" href="https://tinyurl.com/yxu2xd4k"
+                            <a id="regButton" target="_blank"  href="#"  onclick="functionAlert();"
                                 class="btn confer-btn mt-3 mt-lg-0 ml-3 ml-lg-5">Get
                                 Tickets <i class="zmdi zmdi-long-arrow-right"></i></a>
-
+                                
                             <!--  onclick="alert('Hungry? Grab a Snicker xD  You\'re almost there!');"-->
+                            <!-- onclick="alert('Now that you\'ve bench marked your seats, wait for the big day in 11 days !!!');" -->
                             <!-- <a href="#" class="btn confer-btn mt-3 mt-lg-0 ml-3 ml-lg-5">Get Tickets <i
                                     class="zmdi zmdi-long-arrow-right"></i></a> -->
                         </div>
@@ -205,7 +248,13 @@
         <br>
     </header>
     <!-- Header Area End -->
-
+    <div id="confirm"style="background: black;">
+            <div class="message" style="color: white;" ><center>Hi Pullingos!! We'll get back to you soon xD</center></div>
+            <!-- <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNjyHBjM74KLxvROpx34zsT4zPzMWHMHz4zzJwAtemXGglsjtA" width="120" height="70"/> -->
+            <img src = "./img/meme/regPause.jpg" width="250" height="250"/>
+            <br>
+            <button class="yes">OK</button>
+    </div>
     <!-- Welcome Area Start -->
     <section class="our-speaker-area bg-img bg-gradient-overlay section-padding-100-6"
         style="background-image: url(img/bg-img/100.jpeg);" id="section-0">
@@ -863,6 +912,18 @@
             navToggler.removeClass('active');
         }
     </script>
+
+<script>
+        function functionAlert(msg, myYes) {
+           var confirmBox = $("#confirm");
+           confirmBox.find(".message").text(msg);
+           confirmBox.find(".yes").unbind().click(function() {
+              confirmBox.hide();
+           });
+           confirmBox.find(".yes").click(myYes);
+           confirmBox.show();
+        }
+     </script>
 </body>
 
 </html>
