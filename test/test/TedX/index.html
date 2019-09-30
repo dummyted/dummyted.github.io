@@ -36,35 +36,37 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
 
-         <style>
-            #confirm {
-               display: none;
-               background-color: #FFFFFF;
-               border: 1px solid #aaa;
-               position: fixed;
-               width: 250px;
-               left: 50%;
-               margin-left: -100px;
-               padding: 6px 8px 8px;
-               box-sizing: border-box;
-               text-align: center;
-               z-index: 9999999;
-            }
-            #confirm button {
-               background-color: #48E5DA;
-               display: inline-block;
-               border-radius: 5px;
-               border: 1px solid #aaa;
-               padding: 5px;
-               text-align: center;
-               width: 80px;
-               cursor: pointer;
-               z-index: 9999999;
-            }
-            #confirm .message {
-               text-align: left;
-            }
-         </style>
+    <style>
+        #confirm {
+            display: none;
+            background-color: #FFFFFF;
+            border: 1px solid #aaa;
+            position: fixed;
+            width: 250px;
+            left: 50%;
+            margin-left: -100px;
+            padding: 6px 8px 8px;
+            box-sizing: border-box;
+            text-align: center;
+            z-index: 9999999;
+        }
+
+        #confirm button {
+            background-color: #48E5DA;
+            display: inline-block;
+            border-radius: 5px;
+            border: 1px solid #aaa;
+            padding: 5px;
+            text-align: center;
+            width: 80px;
+            cursor: pointer;
+            z-index: 9999999;
+        }
+
+        #confirm .message {
+            text-align: left;
+        }
+    </style>
     <style>
         /* Paste this css to your style sheet file or under head tag */
         /* This only works with JavaScript, 
@@ -97,15 +99,15 @@
         }
     </style>
     <style>
-            #dialog{
-                height:auto !important;
-                width:auto !important;
-                z-index: 999999999;
-                position:fixed ;
-                visibility: hidden;
-                background: url("./img/meme/regPause.jpg") center center no-repeat #000000;
-                background-size: cover;
-            }
+        #dialog {
+            height: auto !important;
+            width: auto !important;
+            z-index: 999999999;
+            position: fixed;
+            visibility: hidden;
+            background: url("./img/meme/regPause.jpg") center center no-repeat #000000;
+            background-size: cover;
+        }
     </style>
 </head>
 
@@ -231,10 +233,10 @@
                             </ul>
 
                             <!-- Get Tickets Button -->
-                            <a id="regButton" target="_blank"  href="#"  onclick="functionAlert();"
+                            <a id="regButton" target="_blank" href="#" onclick="functionAlert();"
                                 class="btn confer-btn mt-3 mt-lg-0 ml-3 ml-lg-5">Get
                                 Tickets <i class="zmdi zmdi-long-arrow-right"></i></a>
-                                
+
                             <!--  onclick="alert('Hungry? Grab a Snicker xD  You\'re almost there!');"-->
                             <!-- onclick="alert('Now that you\'ve bench marked your seats, wait for the big day in 11 days !!!');" -->
                             <!-- <a href="#" class="btn confer-btn mt-3 mt-lg-0 ml-3 ml-lg-5">Get Tickets <i
@@ -248,12 +250,14 @@
         <br>
     </header>
     <!-- Header Area End -->
-    <div id="confirm"style="background: black;">
-            <div class="message" style="color: white;" ><center>Hi Pullingos!! We'll get back to you soon xD</center></div>
-            <!-- <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNjyHBjM74KLxvROpx34zsT4zPzMWHMHz4zzJwAtemXGglsjtA" width="120" height="70"/> -->
-            <img src = "./img/meme/regPause.jpg" width="250" height="250"/>
-            <br>
-            <button class="yes">OK</button>
+    <div id="confirm" style="background: black;">
+        <div class="message" style="color: white;">
+            <center>Hi Pullingos!! We'll get back to you soon xD</center>
+        </div>
+        <!-- <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNjyHBjM74KLxvROpx34zsT4zPzMWHMHz4zzJwAtemXGglsjtA" width="120" height="70"/> -->
+        <img src="./img/meme/regPause.jpg" width="250" height="250" />
+        <br>
+        <button class="yes">OK</button>
     </div>
     <!-- Welcome Area Start -->
     <section class="our-speaker-area bg-img bg-gradient-overlay section-padding-100-6"
@@ -299,7 +303,7 @@
             <div class="row align-items-center">
                 <!-- About Content -->
 
-                <div class="col-12 col-md-12">
+                <div class="col-12 col-md-6">
                     <center>
                         <h1 class="wow fadeInUp" data-wow-delay="300ms" style="color:red">ABOUT
                             TED
@@ -307,14 +311,13 @@
                     </center>
                     <div class="about-content-text mb-80">
                         <!-- <h6 class="wow fadeInUp" data-wow-delay="300ms">About TED<sup>X</sup>
-    
                             </h6> -->
                         <p class="wow fadeInUp" data-wow-delay="300ms" style="text-align: justify;
                             text-justify: inter-word;">
                             TED is a non-profit forum which aims to build up a sociable, robust and a sustainable
                             community. They catalyse thinking under the banner “IDEAS WORTH SPREADING”. TED signifies
                             technology, entertainment and design. Speakers from various branches of knowledge share
-                            their experience and wisdom. Their words do give life to diverse designs. The speakers get
+                            their experience and wisdom. The speakers get
                             through the spectators and encourage their thoughts unambiguously. It’s purely a gathering
                             that brings fascinating, distinct individuals together. This collaboration germinates new
                             calibre. TED is a major supporting tool as it adapts to gradual evolution of learning.
@@ -323,10 +326,45 @@
                                     class="zmdi zmdi-long-arrow-right"></i></a> -->
                     </div>
                 </div>
-                <div class="col-12 col-md-12">
+                <div class="col-12 col-md-6">
                     <center>
                         <h1 class="wow fadeInUp" data-wow-delay="300ms" style="color:red">ABOUT
                             TED<sup>x</sup>
+                        </h1>
+                    </center>
+                    <div class="about-content-text mb-80">
+                        <!-- <h6 class="wow fadeInUp" data-wow-delay="300ms">About TED<sup>X</sup>
+                                </h6> -->
+                        <p class="wow fadeInUp" data-wow-delay="300ms" style="text-align: justify;
+                                text-justify: inter-word;">
+                            TED<sup>x</sup> is a program of local, self-organized events
+                            that bring people together to share a TED-like experience In the spirit of ideas worth
+                            spreading. At a TED<sup>x</sup> event,
+                            TEDTalks videos
+                            and live speakers combine to spark deep discussion and connection, whose words give life to
+                            diverse designs. These local,
+                            self-organized events are branded TED<sup>x</sup>, where <u
+                                style="color:red;">X=Independently organized TED
+                                event</u>. The TED Conference provides general guidance for the TED<sup>x</sup> program,
+                            but
+                            individual
+                            TED<sup>x</sup>
+                            events are
+                            self-organized. (Subject to certain rules and regulations.) For more information on
+                            TED<sup>x</sup>,
+                            visit <a href="http://www.ted.com/tedx" style="color:red;">http://www.ted.com/tedx.</a>
+                            <br>
+                        </p>
+                        <!-- <a href="#" class="btn confer-btn1 mt-50 wow fadeInUp" data-wow-delay="300ms">Interested <i
+                                        class="zmdi zmdi-long-arrow-right"></i></a> -->
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12">
+                    <center>
+                        <h1 class="wow fadeInUp" data-wow-delay="300ms" style="color:red">ABOUT
+                            TED<sup>x</sup>SriSairamEngineeringCollege
+                            <!-- SRISAIRAMENGINEERINGCOLLEGE -->
                         </h1>
                     </center>
                 </div>
@@ -346,22 +384,15 @@
                         </div>
                         <p class="wow fadeInUp" data-wow-delay="300ms" style="text-align: justify;
                         text-justify: inter-word;">
-                            TED<sup>x</sup> is a program of local,
-                            self-organized events
-                            that bring people together to share a TED-like experience In the spirit of ideas worth
-                            spreading. At a TED<sup>x</sup> event,
-                            TEDTalks videos
-                            and live speakers combine to spark deep discussion and connection. These local,
-                            self-organized events are branded TED<sup>x</sup>, where <u
-                                style="color:red;">X=Independently organized TED
-                                event</u>. The TED Conference provides general guidance for the TED<sup>x</sup> program,
-                            but
-                            individual
-                            TED<sup>x</sup>
-                            events are
-                            self-organized. (Subject to certain rules and regulations.) For more information on
-                            TED<sup>x</sup>,
-                            visit <a href="http://www.ted.com/tedx" style="color:red;">http://www.ted.com/tedx.</a>
+                            As a source of strength and support to TED, we TEDxSriSairamEngineeringCollege work for
+                            IDEAS WORTH
+                            SPREADING. It’s a great delight to embark our third annual event. We tend to lay stronger
+                            foundations with incredible flair. The event unpacks the speaker’s object and leaves a deep
+                            imprint amongst our gathering. We try to unlock the moment of every single attendee, that
+                            makes their heart sing. We do endeavour to act as a foundation for inspiration and
+                            motivation.We celebrate, empower and cherish the high old time. If you have any additional
+                            questions or inquiries, please contact us at <a style="color:red;"
+                                href="mailto:tedxssec2019@gmail.com">tedxssec2019@gmail.com</a>.
                         </p>
                         <!-- <a href="#" class="btn confer-btn1 mt-50 wow fadeInUp" data-wow-delay="300ms">Interested <i
                                 class="zmdi zmdi-long-arrow-right"></i></a> -->
@@ -913,17 +944,17 @@
         }
     </script>
 
-<script>
+    <script>
         function functionAlert(msg, myYes) {
-           var confirmBox = $("#confirm");
-           confirmBox.find(".message").text(msg);
-           confirmBox.find(".yes").unbind().click(function() {
-              confirmBox.hide();
-           });
-           confirmBox.find(".yes").click(myYes);
-           confirmBox.show();
+            var confirmBox = $("#confirm");
+            confirmBox.find(".message").text(msg);
+            confirmBox.find(".yes").unbind().click(function () {
+                confirmBox.hide();
+            });
+            confirmBox.find(".yes").click(myYes);
+            confirmBox.show();
         }
-     </script>
+    </script>
 </body>
 
 </html>
