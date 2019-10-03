@@ -4741,6 +4741,44 @@ input[type=submit].btn-block {
 }
 
 @media (min-width:992px) {
+
+    .glowPurple {
+        font-size: 30px;
+        /* color: #fff; */
+        text-align: center;
+        -webkit-animation: glowPurple 1s ease-in-out infinite alternate;
+        -moz-animation: glowPurple 1s ease-in-out infinite alternate;
+        animation: glowPurple 1s ease-in-out infinite alternate;
+    }
+
+    @-webkit-keyframes glowPurple {
+        from {
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+        }
+
+        to {
+            text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+        }
+    }
+
+    .classy-nav-container .classy-navbar .classynav ul li a.redGLOW {
+        /* color:red; */
+        text-align: center;
+        -webkit-animation: glowRed 1s ease-in-out infinite alternate;
+        -moz-animation: glowRed 1s ease-in-out infinite alternate;
+        animation: glowRed 1s ease-in-out infinite alternate;
+    }
+
+    @-webkit-keyframes glowRed {
+        from {
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e6006b, 0 0 40px #e6006b, 0 0 50px #e6006b, 0 0 60px #e6006b, 0 0 70px #e6006b;
+        }
+
+        to {
+            text-shadow: 0 0 20px #fff, 0 0 30px #ff4d4d, 0 0 40px #ff4d4d, 0 0 50px #ff4d4d, 0 0 60px #ff4d4d, 0 0 70px #ff4d4d, 0 0 80px #ff4d4d;
+        }
+    }
+
     .navbar-expand-lg {
         -ms-flex-flow: row nowrap;
         flex-flow: row nowrap;
