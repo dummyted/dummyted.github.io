@@ -4640,6 +4640,10 @@ input[type=submit].btn-block {
         padding-right: 0;
         padding-left: 0
     }
+
+    .alteredSize {
+        font-size: 10px !important;
+    }
 }
 
 @media (min-width:576px) {
@@ -4688,6 +4692,10 @@ input[type=submit].btn-block {
     .navbar-expand-md>.container-fluid {
         padding-right: 0;
         padding-left: 0
+    }
+
+    .alteredSize {
+        font-size: 20px !important;
     }
 }
 
