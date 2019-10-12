@@ -20,7 +20,7 @@ Last Update: March 14, 2019
     07.0 Header Area CSS
     08.0 Hero Area CSS
     09.0 Footer Area CSS
-    10.0 About Area CSS
+    10.0 About Areaw CSS
     11.0 Counter Area CSS
     12.0 Speakar Area CSS
     13.0 Breadcrumb Area CSS
@@ -759,6 +759,11 @@ input:required {
     color: #ffffff; }
     .confer-gb-btn:hover::after, .confer-gb-btn:focus::after {
       opacity: 0; }
+.classy-nav-container .classy-navbar .classynav ul li a.redGLOW{
+  /* color:red; */
+  text-align: center;
+}
+
 
 /* :: 7.0 Header Area CSS */
 .classy-nav-container {
@@ -780,9 +785,13 @@ input:required {
       text-transform: uppercase;
       color: #ffffff;
       font-weight: 500;
-      padding: 0 20px; }
+      padding: 0 20px; 
+      text-align: center;
+    }
       .classy-nav-container .classy-navbar .classynav ul li a:hover, .classy-nav-container .classy-navbar .classynav ul li a:focus {
-        color: #ff0000; }
+        color: #ff0000; 
+        text-align: center;
+      }
       @media only screen and (min-width: 992px) and (max-width: 1199px) {
         .classy-nav-container .classy-navbar .classynav ul li a {
           font-size: 14px; } }
@@ -2531,6 +2540,18 @@ input:required {
       border-color: #000000; }
 
 /* :: 18.0 Tickets Area CSS */
+
+/* Glow Start */
+
+
+.glowPurple {
+  font-size: 30px;
+  /* color: #fff; */
+  text-align: center;
+}
+
+/* Glow end */
+
 .our-ticket-pricing-table-area {
   position: relative;
   z-index: 1; }
