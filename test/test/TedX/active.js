@@ -164,11 +164,8 @@
     confer_window.on('scroll', function () {
         if (confer_window.scrollTop() > 0) {
             $('.header-area').addClass('sticky');
-            $('.classy-nav-container .classy-navbar .classynav ul li a').addClass('redGLOW');
-            // ('.')
         } else {
             $('.header-area').removeClass('sticky');
-            $('.classy-nav-container .classy-navbar .classynav ul li a').removeClass('redGLOW');
         }
     });
 
