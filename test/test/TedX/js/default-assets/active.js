@@ -228,7 +228,7 @@
         $("#clock").countdown("2019/10/12", function (event) {
             // alert(event);
             // console.log(event);
-            $(this).html(event.strftime("</div> <div>%d <span>Days</span></div> <div>%H <span>Hours</span></div> <div>%M <span>Minutes</span></div> <div>%S <span>Seconds</span></div>"));
+            $(this).html(event.strftime(" <div>%Y <span>Years</span></div> <div>%m <span>Months</span></div> <div>%d <span>Days</span></div> <div>%H <span>Hours</span></div> <div>%M <span>Minutes</span></div> <div>%S <span>Seconds</span></div>"));
         });
     }
 
